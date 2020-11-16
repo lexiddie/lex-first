@@ -1,11 +1,16 @@
 {
+  "homepage": "https://lexiddie.github.io/lex-first",
   "name": "lex-first",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
